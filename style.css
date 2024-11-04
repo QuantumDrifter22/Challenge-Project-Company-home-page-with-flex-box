@@ -1,1 +1,151 @@
-css
+
+h1{
+    text-align: center;
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block; 
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: rgb(54, 54, 54);
+    text-decoration:underline ;
+}
+
+.navbar li{
+    float: left;
+}
+
+
+body{
+    background-color: black;
+    margin: 0px;
+}
+
+main{
+    margin: 50px;
+}
+
+
+
+
+.heading{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.dodds{
+    display: flex;
+   width: 300px;
+   height: auto;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   box-shadow: 0px 5px 5px 0px;
+   border: 1px solid darkgrey;
+}
+
+.p1{
+    text-align: center;
+    margin: 30px;
+    text-decoration: underline;
+}
+
+.mstate{
+    text-align: center;
+    color: rgb(214, 214, 214);
+    text-decoration: underline;
+    padding: 0px;
+    margin: 0px;
+}
+
+.paragraph{
+    margin: 35px;
+    color: rgb(214, 214, 214);
+}
+
+body h4{
+    text-align: center;
+    color:rgb(214, 214, 214); ;
+}
+
+.swat{
+    width: 950px;
+    height: 200px;
+}
+
+footer {
+    background-image: url("../images/swatteam.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    width: 1200px;
+    height: 200px;
+}
+
+
+
+/* General desktop screens and larger */
+@media (min-width: 992px) {
+    /* Styles for large desktops and laptops */
+    .container {
+      max-width: 960px;
+    }
+    .header {
+      font-size: 24px;
+    }
+    /* Add additional styling here */
+  }
+  
+  /* Tablets and small desktops */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for tablets */
+    .container {
+      max-width: 720px;
+    }
+    .header {
+      font-size: 20px;
+    }
+    /* Additional styling here */
+  }
+  
+  /* Large phones */
+  @media (min-width: 576px) and (max-width: 767px) {
+    /* Styles for large smartphones */
+    .container {
+      max-width: 540px;
+    }
+    .header {
+      font-size: 18px;
+    }
+    /* Additional styling here */
+  }
+  
+  /* Small phones */
+  @media (max-width: 575px) {
+    /* Styles for small smartphones */
+    .container {
+      width: 100%;
+    }
+    .header {
+      font-size: 16px;
+    }
+    /* Additional styling here */
+  }
+  
