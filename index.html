@@ -1,4 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="en">
+  {% load static %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Home</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet"  type="text/css"  href="{%static 'css/home.css' %}">
+</head>
+
+<body>
   
+  <nav class="navbar">
+    <ul>
+      <li> <a href="{% url 'home'%}"> Home </a></li>
+      <li> <a href="{% url 'about'%}"> About </a></li> <!--'about' cannot have anyspace between otherwise it will creat an error-->
+      <li> <a href="{% url 'contact'%}"> Contact </a></li>
+      <li> <a href="{% url 'vote'%}"> Vote </a></li>
+    </ul>
+  
+  </nav>
+
+<main>
+
+  <h1 class="heading">Electing Kevin Dodds for Rutherford County Sheriff</h1>
+  <br>
+
+  <img class="dodds"  src="{% static 'images/cowboydodds.jpg' %}" alt="image of dodds">
+</main>
+
+<h2 class="mstate">Mission Statement</h2>
+
+<div class="paragraph">
+<span> As your candidate for Sheriff of Rutherford County, I, Kevin James Dodds, bring over four decades of law enforcement experience, including time served as both a Chief in Pennsylvania and as a member of the Dallas Police Department. With such an extensive career in a major metropolitan area, I have honed my skills in public safety, criminal investigation, and leadership. My track record of fostering collaboration within communities and advancing crime prevention strategies reflects my unwavering commitment to creating a safer, more secure environment for all.
+
+</span>
+
+<span> Having led a department as Chief, I understand the importance of accountability, transparency, and building trust between law enforcement and the community. My time in leadership positions has given me firsthand experience in managing budgets, ensuring officers are properly trained, and implementing modern policing techniques to adapt to an ever-changing landscape. I believe these experiences uniquely qualify me to lead the Rutherford County Sheriff's Office effectively and efficiently.
+
+
+</span>
+
+<span>Rutherford County deserves a Sheriff who not only understands the technical aspects of law enforcement but also has the dedication to serve the community with integrity and respect. I have a passion for public service, and my years in Law enforcement have prepared me to address the specific needs of this county. I am ready to work with citizens, local leaders, and law enforcement officers to ensure that Rutherford County remains a place where families feel safe and respected. I am asking for your support and your vote, to serve as your next Sheriff in the 2025 election.
+
+</span>
+</div>
+
+<p class="p1">  </p>
+
+<br><br>
+
+<h1>Click <a href="{% url 'vote'%}"> here</a> to vote</h1>
+
+<br><br>
+<h4>To learn more about me and my mission as Sheriff <a href="{% url 'about'%}">Click Here</a></h4>
+
+
+<footer>
+ 
+ <!-- <img class="swat" src="{%static 'images/swatteam.webp'%}" alt="img of RCSO swat">
+-->
+
+<h2 style="color:rgb(255, 166, 0); text-align: center; display: flex; justify-content: center; align-items: center; margin-top: 50px; font-size: 40px; padding-top: 80px; font-weight:500;   "> Kevin Dodds for Rutherford County Sheriff</h2>
+
+</footer>
+
+
+</body>
+
 </html>
